@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import {MatToolbarModule, } from '@angular/material/toolbar';
@@ -14,11 +15,12 @@ import { MessageComponent } from './pages/message/message.component';
 import { UserComponent } from './pages/user/user.component';
 import { CompassComponent } from './pages/compass/compass.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { RouterModule, ROUTES } from '@angular/router';
-import { AngularMaterialModule } from './components/main/angular-material/angular-material.module';
+import { AngularMaterialModule } from './main/angular-material/angular-material.module';
+import { MainComponent } from './main/main.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -31,20 +33,21 @@ import { AngularMaterialModule } from './components/main/angular-material/angula
     UserComponent,
     CompassComponent,
     ProfileComponent,
-    HomeComponent
+    MainComponent
     
  
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     CommonModule,
-    AngularMaterialModule
-  
+    AngularMaterialModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

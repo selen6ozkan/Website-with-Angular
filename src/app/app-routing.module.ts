@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainComponent } from './main/main.component';
 import { ErrorComponent } from './pages/error/error.component';
-import {HomeComponent} from './pages/home/home.component';
 
 
 const routes: Routes = [
 
-  {path:'home',component:HomeComponent},
+  {path:'home',component:MainComponent},
   {path:'notification',component:ErrorComponent},
   {path:'message',component:ErrorComponent},
   {path:'user',component:ErrorComponent},

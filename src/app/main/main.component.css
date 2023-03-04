@@ -8,7 +8,6 @@
 .card li {
     margin: 20px 0;
 
-    color: rgb(188, 188, 188);
 }
 .nav-link{
     display:flex;
@@ -20,21 +19,32 @@
 .card li a svg{
     margin-right: 15px;
 }
-.card li a svg{
-    color:rgb(147, 147, 148)
-}
+
 .card .active{
     color: blue;
-    background-color: rgb(135, 135, 135);
+ 
 
+}
+.comment{
+    padding: 20px;
+
+}
+.card .nav-right{
+    padding: 20px;
+}
+
+.card .nav-right .bottom{
+    margin-top: 15px;
+    line-height: 0%;
+}
+.card .nav-right .svg{
+    padding: 0 25px;
 }
 .main-container{
     display: flex;
     justify-content:space-evenly;
-    align-items: center;
+    background-color: #E5E5E5;
+    padding: 20px;
 
 }
-.card{
-   
-    background-color: blueviolet;
-}
+
